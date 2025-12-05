@@ -1,7 +1,7 @@
 This folder contains the core modules used to train and evaluate the DeepFCM-PSO framework.
 
-#main.py
-Runs the full pipeline. It loads and preprocesses the polar-map images, trains the CNN, merges CNN predictions with clinical data, performs k-fold training of DeepFCM-PSO, saves metrics and weight matrices, and generates final Grad-CAM and FCM visualizations.
+• main.py
+Central execution script. Handles data loading, image preprocessing, CNN training and prediction, integration of CNN outputs with clinical features, and k-fold training of the DeepFCM-PSO model. It also saves performance metrics, optimized weight matrices, and generates Grad-CAM and FCM visualizations.
 
 #particle_functions.py
 Implements the LévyFCM-PSO optimizer. It defines the particle structure, initializes weight matrices, runs PSO with Lévy flights, evaluates fitness, and returns the best FCM weights and concept evolution for each fold.
